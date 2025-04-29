@@ -29,7 +29,7 @@ jobs:
         id: netbird
         uses: Alemiz112/netbird-connect@v1
         with:
-          setup-key: ${{ secrets.NETBIRD_SETUP_KEY }}
+          args: '--setup-key ${{ secrets.NETBIRD_SETUP_KEY }}'
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
